@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+   
+
+}
+
+.cal-body {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 88vh;
+    width: 25vw;
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+}
+
+#input {
+    height: 2rem;
+    padding: 1.2rem;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    
+    padding: 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+
+
+@media screen and (max-width:930px) {
+    .button{
+        border-radius: 5%;
+        padding:1.5rem ;
+        flex: 1 1 15%;
+    }
+    .cal-body{
+        height: 80%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .button{
+        border-radius: 5%;
+        padding:0.5rem ;
+        flex: 1 1 15%;
+    }
+    .cal-body{
+        height: 80%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:599px) {
+   
+    .cal-body{
+        height: 50%;
+        width: 70vw;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <div class="cal-body">
+       
+        <input type="text" id="input" readonly>
+        <div class="buttons">
+            <button class="button" 
+            onclick="num='';
+            document.querySelector('input').value=num;">C</button>
+            <button class="button" 
+            onclick="num=num+'9';
+            document.querySelector('input').value=num;">9</button>
+            <button class="button"
+            onclick="num=num+'8';
+            document.querySelector('input').value=num;">8</button>
+            <button class="button" 
+            onclick="num=num+'+';
+            document.querySelector('input').value=num;">+</button>
+            <button class="button"
+            onclick="num=num+'7';
+            document.querySelector('input').value=num;">7</button>
+            <button class="button"
+            onclick="num=num+'6';
+            document.querySelector('input').value=num;"
+            >6</button>
+            <button class="button"
+            onclick="num=num+'5';
+            document.querySelector('input').value=num;">5</button>
+            <button class="button"
+            onclick="num=num+'-';
+            document.querySelector('input').value=num;">-</button>
+            <button class="button"
+            onclick="num=num+'4';
+            document.querySelector('input').value=num;">4</button>
+            <button class="button"
+            onclick="num=num+'3';
+            document.querySelector('input').value=num;">3</button>
+            <button class="button"
+            onclick="num=num+'2';
+            document.querySelector('input').value=num;">2</button>
+            <button class="button"
+            onclick="num=num+'*';
+            document.querySelector('input').value=num;">*</button>
+            <button class="button"
+            onclick="num=num+'1';
+            document.querySelector('input').value=num;">1</button>
+            <button class="button"
+            onclick="num=num+'0';
+            document.querySelector('input').value=num;">0</button>
+            <button class="button"
+            onclick="num=num+'/';
+            document.querySelector('input').value=num;">/</button>
+            <button class="button"
+            onclick="num=num+'.';
+            document.querySelector('input').value=num;">.</button>
+            <button class="button"
+            onclick="num=eval(num);
+            document.querySelector('input').value=num;">=</button>
+
+        </div>
+    </div>
+    <script>
+        let num='';
+    </script>
+</body>
+</html>
